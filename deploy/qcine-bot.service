@@ -1,0 +1,21 @@
+[Unit]
+Description=Q Cine Hub Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=qcine
+WorkingDirectory=/opt/qcine_bot
+EnvironmentFile=/opt/qcine_bot/.env
+ExecStart=/opt/qcine_bot/.venv/bin/python bot.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/qcine_bot/data /opt/qcine_bot/logs
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,628 @@
+ 2026-10-04 11:00:20,379 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 11:00:25,698 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 11:00:26,137 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=-1001234567890 - is the bot an admin there?
+2026-10-04 11:00:27,535 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 11:00:28,316 | WARNING  | qcine | Could not set admin commands for 111111111 (has the admin started the bot?)
+2026-10-04 11:00:28,571 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 11:00:28,824 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 11:00:41,770 | INFO     | handlers.user | Code not found: HELLO (user 5305682057)
+2026-10-04 11:00:42,699 | INFO     | aiogram.event | Update id=494901093 is handled. Duration 940 ms by bot id=7024435212
+2026-10-04 12:45:11,604 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 12:45:13,184 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 12:45:13,623 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=-1001234567890 - is the bot an admin there?
+2026-10-04 12:45:14,917 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 12:45:15,979 | WARNING  | qcine | Could not set admin commands for 111111111 (has the admin started the bot?)
+2026-10-04 12:45:16,228 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 12:45:16,480 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 12:46:17,889 | INFO     | aiogram.event | Update id=494901095 is handled. Duration 925 ms by bot id=7024435212
+2026-10-04 12:46:25,340 | INFO     | handlers.user | Code not found: 12447 (user 1709162382)
+2026-10-04 12:46:25,830 | INFO     | aiogram.event | Update id=494901096 is handled. Duration 509 ms by bot id=7024435212
+2026-10-04 12:48:32,254 | INFO     | aiogram.event | Update id=494901097 is not handled. Duration 16 ms by bot id=7024435212
+2026-10-04 12:48:58,665 | WARNING  | middleware.admin | Unauthorized admin access attempt: user_id=1709162382 username=raihan00002
+2026-10-04 12:48:59,166 | INFO     | aiogram.event | Update id=494901098 is handled. Duration 510 ms by bot id=7024435212
+2026-10-04 12:49:25,915 | WARNING  | middleware.admin | Unauthorized admin access attempt: user_id=1709162382 username=raihan00002
+2026-10-04 12:49:26,357 | INFO     | aiogram.event | Update id=494901099 is handled. Duration 455 ms by bot id=7024435212
+2026-10-04 12:50:50,848 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 12:50:51,114 | INFO     | database | Database connection closed
+2026-10-04 12:50:51,115 | INFO     | qcine | Shutdown complete
+2026-10-04 12:50:51,115 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 12:51:13,462 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 12:51:14,525 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 12:51:14,974 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=-1001234567890 - is the bot an admin there?
+2026-10-04 12:51:16,210 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 12:51:16,915 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 12:51:17,192 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 12:51:19,875 | INFO     | aiogram.event | Update id=494901100 is handled. Duration 968 ms by bot id=7024435212
+2026-10-04 12:51:35,020 | INFO     | aiogram.event | Update id=494901101 is handled. Duration 869 ms by bot id=7024435212
+2026-10-04 12:51:52,135 | INFO     | aiogram.event | Update id=494901102 is handled. Duration 438 ms by bot id=7024435212
+2026-10-04 12:52:17,923 | INFO     | aiogram.event | Update id=494901103 is handled. Duration 478 ms by bot id=7024435212
+2026-10-04 12:52:45,463 | INFO     | aiogram.event | Update id=494901104 is handled. Duration 457 ms by bot id=7024435212
+2026-10-04 12:53:00,112 | INFO     | aiogram.event | Update id=494901105 is handled. Duration 435 ms by bot id=7024435212
+2026-10-04 12:53:19,253 | INFO     | aiogram.event | Update id=494901106 is handled. Duration 461 ms by bot id=7024435212
+2026-10-04 12:55:24,968 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 82, in ingest
+    sent = await self._bot.send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.document.file_id, caption=caption
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 2628, in send_document
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 12:55:25,446 | INFO     | aiogram.event | Update id=494901107 is handled. Duration 924 ms by bot id=7024435212
+2026-10-04 12:57:18,039 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 82, in ingest
+    sent = await self._bot.send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.document.file_id, caption=caption
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 2628, in send_document
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 12:57:18,648 | INFO     | aiogram.event | Update id=494901108 is handled. Duration 1053 ms by bot id=7024435212
+2026-10-04 12:58:26,759 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 12:58:27,028 | INFO     | database | Database connection closed
+2026-10-04 12:58:27,029 | INFO     | qcine | Shutdown complete
+2026-10-04 12:58:27,031 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 12:58:45,168 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 12:58:46,191 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 12:58:46,632 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=-1762874228 - is the bot an admin there?
+2026-10-04 12:58:47,860 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 12:58:48,556 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 12:58:48,808 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 12:59:02,609 | INFO     | aiogram.event | Update id=494901109 is not handled. Duration 7 ms by bot id=7024435212
+2026-10-04 12:59:25,239 | INFO     | aiogram.event | Update id=494901110 is not handled. Duration 10 ms by bot id=7024435212
+2026-10-04 12:59:44,301 | INFO     | aiogram.event | Update id=494901111 is handled. Duration 991 ms by bot id=7024435212
+2026-10-04 12:59:47,074 | INFO     | aiogram.event | Update id=494901112 is handled. Duration 958 ms by bot id=7024435212
+2026-10-04 12:59:50,663 | INFO     | aiogram.event | Update id=494901113 is handled. Duration 913 ms by bot id=7024435212
+2026-10-04 12:59:56,553 | INFO     | aiogram.event | Update id=494901114 is handled. Duration 547 ms by bot id=7024435212
+2026-10-04 13:00:09,688 | INFO     | aiogram.event | Update id=494901115 is handled. Duration 487 ms by bot id=7024435212
+2026-10-04 13:00:21,841 | INFO     | aiogram.event | Update id=494901116 is handled. Duration 465 ms by bot id=7024435212
+2026-10-04 13:00:26,644 | INFO     | aiogram.event | Update id=494901117 is handled. Duration 450 ms by bot id=7024435212
+2026-10-04 13:00:35,368 | INFO     | aiogram.event | Update id=494901118 is handled. Duration 461 ms by bot id=7024435212
+2026-10-04 13:00:47,287 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 82, in ingest
+    sent = await self._bot.send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.document.file_id, caption=caption
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 2628, in send_document
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 13:00:47,801 | INFO     | aiogram.event | Update id=494901119 is handled. Duration 971 ms by bot id=7024435212
+2026-10-04 13:08:50,248 | INFO     | aiogram.event | Update id=494901120 is handled. Duration 434 ms by bot id=7024435212
+2026-10-04 13:14:02,097 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] The semaphore timeout period has expired
+2026-10-04 13:14:02,097 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7024435212)
+2026-10-04 13:14:14,022 | INFO     | aiogram.dispatcher | Connection established (tryings = 1, bot id = 7024435212)
+2026-10-04 13:28:19,467 | INFO     | aiogram.event | Update id=494901121 is handled. Duration 1122 ms by bot id=7024435212
+2026-10-04 13:28:39,745 | INFO     | aiogram.event | Update id=494901122 is handled. Duration 537 ms by bot id=7024435212
+2026-10-04 13:28:53,841 | INFO     | aiogram.event | Update id=494901123 is handled. Duration 439 ms by bot id=7024435212
+2026-10-04 13:28:56,641 | INFO     | aiogram.event | Update id=494901124 is handled. Duration 509 ms by bot id=7024435212
+2026-10-04 13:29:01,863 | INFO     | aiogram.event | Update id=494901125 is handled. Duration 508 ms by bot id=7024435212
+2026-10-04 13:29:09,577 | INFO     | aiogram.event | Update id=494901126 is handled. Duration 440 ms by bot id=7024435212
+2026-10-04 13:29:22,240 | INFO     | aiogram.event | Update id=494901127 is handled. Duration 509 ms by bot id=7024435212
+2026-10-04 13:29:36,706 | INFO     | aiogram.event | Update id=494901128 is handled. Duration 435 ms by bot id=7024435212
+2026-10-04 13:29:53,280 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 82, in ingest
+    sent = await self._bot.send_document(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.document.file_id, caption=caption
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 2628, in send_document
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 13:29:53,783 | INFO     | aiogram.event | Update id=494901129 is handled. Duration 919 ms by bot id=7024435212
+2026-10-04 13:30:45,086 | INFO     | aiogram.event | Update id=494901130 is handled. Duration 512 ms by bot id=7024435212
+2026-10-04 13:30:54,252 | INFO     | aiogram.event | Update id=494901131 is handled. Duration 529 ms by bot id=7024435212
+2026-10-04 13:30:57,914 | INFO     | aiogram.event | Update id=494901132 is handled. Duration 433 ms by bot id=7024435212
+2026-10-04 13:31:04,029 | INFO     | aiogram.event | Update id=494901133 is handled. Duration 921 ms by bot id=7024435212
+2026-10-04 13:31:21,036 | INFO     | handlers.user | Code not found: 1283 (user 1709162382)
+2026-10-04 13:31:21,483 | INFO     | aiogram.event | Update id=494901134 is handled. Duration 452 ms by bot id=7024435212
+2026-10-04 13:31:31,994 | INFO     | handlers.user | Code not found: UO2026 (user 1709162382)
+2026-10-04 13:31:32,601 | INFO     | aiogram.event | Update id=494901135 is handled. Duration 613 ms by bot id=7024435212
+2026-10-04 13:32:42,446 | INFO     | handlers.user | Code not found: UEU (user 1709162382)
+2026-10-04 13:32:42,951 | INFO     | aiogram.event | Update id=494901136 is handled. Duration 510 ms by bot id=7024435212
+2026-10-04 14:02:42,183 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-04 14:02:42,259 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7024435212)
+2026-10-04 14:34:41,850 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-10-04 14:34:41,989 | WARNING  | aiogram.dispatcher | Sleep for 1.194110 seconds and try again... (tryings = 1, bot id = 7024435212)
+2026-10-04 14:34:43,246 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-10-04 14:34:43,246 | WARNING  | aiogram.dispatcher | Sleep for 1.541284 seconds and try again... (tryings = 2, bot id = 7024435212)
+2026-10-04 14:34:44,795 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-10-04 14:34:44,795 | WARNING  | aiogram.dispatcher | Sleep for 2.120179 seconds and try again... (tryings = 3, bot id = 7024435212)
+2026-10-04 14:34:46,926 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-10-04 14:34:46,926 | WARNING  | aiogram.dispatcher | Sleep for 2.666503 seconds and try again... (tryings = 4, bot id = 7024435212)
+2026-10-04 14:45:34,551 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-10-04 14:45:34,551 | WARNING  | aiogram.dispatcher | Sleep for 3.457596 seconds and try again... (tryings = 5, bot id = 7024435212)
+2026-10-04 14:45:38,031 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-10-04 14:45:38,032 | WARNING  | aiogram.dispatcher | Sleep for 4.491881 seconds and try again... (tryings = 6, bot id = 7024435212)
+2026-10-04 14:45:46,228 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Multiple exceptions: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help, [WinError 1236] The network connection was aborted by the local system]
+2026-10-04 14:45:46,268 | WARNING  | aiogram.dispatcher | Sleep for 5.049293 seconds and try again... (tryings = 7, bot id = 7024435212)
+2026-10-04 14:45:52,025 | INFO     | aiogram.dispatcher | Connection established (tryings = 8, bot id = 7024435212)
+2026-10-04 14:45:52,031 | INFO     | handlers.user | Code not found: JDI (user 1709162382)
+2026-10-04 14:45:52,904 | INFO     | aiogram.event | Update id=494901137 is handled. Duration 877 ms by bot id=7024435212
+2026-10-04 15:28:43,926 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 15:28:44,219 | INFO     | database | Database connection closed
+2026-10-04 15:28:44,220 | INFO     | qcine | Shutdown complete
+2026-10-04 15:28:44,229 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:15:13,143 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 18:15:14,232 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 18:15:15,033 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 18:15:16,229 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 18:15:17,536 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 18:15:17,789 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:15:23,166 | INFO     | aiogram.event | Update id=494901144 is handled. Duration 977 ms by bot id=7024435212
+2026-10-04 18:15:52,294 | INFO     | handlers.user | Code not found: THE (user 1709162382)
+2026-10-04 18:15:52,782 | INFO     | aiogram.event | Update id=494901145 is handled. Duration 495 ms by bot id=7024435212
+2026-10-04 18:16:05,010 | INFO     | aiogram.event | Update id=494901146 is handled. Duration 457 ms by bot id=7024435212
+2026-10-04 18:16:14,733 | INFO     | aiogram.event | Update id=494901147 is handled. Duration 447 ms by bot id=7024435212
+2026-10-04 18:16:17,924 | INFO     | aiogram.event | Update id=494901148 is handled. Duration 451 ms by bot id=7024435212
+2026-10-04 18:16:30,197 | INFO     | aiogram.event | Update id=494901149 is handled. Duration 476 ms by bot id=7024435212
+2026-10-04 18:16:34,903 | INFO     | aiogram.event | Update id=494901150 is handled. Duration 485 ms by bot id=7024435212
+2026-10-04 18:16:51,712 | INFO     | aiogram.event | Update id=494901151 is handled. Duration 458 ms by bot id=7024435212
+2026-10-04 18:17:16,397 | INFO     | aiogram.event | Update id=494901152 is handled. Duration 452 ms by bot id=7024435212
+2026-10-04 18:18:36,467 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 18:18:36,987 | INFO     | aiogram.event | Update id=494901153 is handled. Duration 1286 ms by bot id=7024435212
+2026-10-04 18:20:32,671 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 18:20:33,184 | INFO     | aiogram.event | Update id=494901154 is handled. Duration 1279 ms by bot id=7024435212
+2026-10-04 18:39:18,335 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 18:39:18,597 | INFO     | database | Database connection closed
+2026-10-04 18:39:18,599 | INFO     | qcine | Shutdown complete
+2026-10-04 18:39:18,601 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:39:33,072 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 18:39:33,988 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 18:39:34,749 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 18:39:35,899 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 18:39:36,532 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 18:39:36,765 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:40:13,080 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 18:40:13,352 | INFO     | database | Database connection closed
+2026-10-04 18:40:13,352 | INFO     | qcine | Shutdown complete
+2026-10-04 18:40:13,353 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:40:27,818 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 18:40:28,772 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 18:40:29,609 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 18:40:30,787 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 18:40:31,504 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 18:40:31,751 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 18:41:44,813 | INFO     | aiogram.event | Update id=494901155 is handled. Duration 969 ms by bot id=7024435212
+2026-10-04 18:41:54,634 | INFO     | handlers.user | Code not found: TEYEUEU13 (user 1709162382)
+2026-10-04 18:41:55,077 | INFO     | aiogram.event | Update id=494901156 is handled. Duration 450 ms by bot id=7024435212
+2026-10-04 19:08:21,806 | INFO     | aiogram.event | Update id=494901157 is handled. Duration 448 ms by bot id=7024435212
+2026-10-04 19:08:35,587 | INFO     | aiogram.event | Update id=494901158 is handled. Duration 454 ms by bot id=7024435212
+2026-10-04 19:08:41,060 | INFO     | aiogram.event | Update id=494901159 is handled. Duration 476 ms by bot id=7024435212
+2026-10-04 19:08:44,465 | INFO     | aiogram.event | Update id=494901160 is handled. Duration 470 ms by bot id=7024435212
+2026-10-04 19:09:05,782 | INFO     | aiogram.event | Update id=494901161 is handled. Duration 453 ms by bot id=7024435212
+2026-10-04 19:09:15,808 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 19:09:16,276 | INFO     | aiogram.event | Update id=494901162 is handled. Duration 1304 ms by bot id=7024435212
+2026-10-04 19:11:00,045 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 19:11:00,300 | INFO     | database | Database connection closed
+2026-10-04 19:11:00,301 | INFO     | qcine | Shutdown complete
+2026-10-04 19:11:00,301 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:11:08,607 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 19:11:09,612 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 19:11:10,372 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 19:11:11,604 | WARNING  | qcine | Could not set admin commands for 222222222 (has the admin started the bot?)
+2026-10-04 19:11:12,255 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 19:11:12,529 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:11:47,810 | INFO     | aiogram.event | Update id=494901163 is not handled. Duration 9 ms by bot id=7024435212
+2026-10-04 19:12:05,876 | INFO     | aiogram.event | Update id=494901164 is handled. Duration 972 ms by bot id=7024435212
+2026-10-04 19:12:10,170 | INFO     | aiogram.event | Update id=494901165 is handled. Duration 441 ms by bot id=7024435212
+2026-10-04 19:12:14,638 | INFO     | aiogram.event | Update id=494901166 is handled. Duration 473 ms by bot id=7024435212
+2026-10-04 19:12:16,729 | INFO     | aiogram.event | Update id=494901167 is handled. Duration 445 ms by bot id=7024435212
+2026-10-04 19:12:24,663 | INFO     | aiogram.event | Update id=494901168 is handled. Duration 470 ms by bot id=7024435212
+2026-10-04 19:12:35,474 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 19:12:35,929 | INFO     | aiogram.event | Update id=494901169 is handled. Duration 1218 ms by bot id=7024435212
+2026-10-04 19:19:28,854 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 19:19:29,115 | INFO     | database | Database connection closed
+2026-10-04 19:19:29,115 | INFO     | qcine | Shutdown complete
+2026-10-04 19:19:29,115 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:19:36,403 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 19:19:37,393 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 19:19:38,180 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 19:19:39,722 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 19:19:39,967 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:20:09,192 | INFO     | aiogram.event | Update id=494901170 is handled. Duration 980 ms by bot id=7024435212
+2026-10-04 19:20:11,302 | INFO     | aiogram.event | Update id=494901171 is handled. Duration 508 ms by bot id=7024435212
+2026-10-04 19:20:13,060 | INFO     | aiogram.event | Update id=494901172 is handled. Duration 466 ms by bot id=7024435212
+2026-10-04 19:20:14,903 | INFO     | aiogram.event | Update id=494901173 is handled. Duration 492 ms by bot id=7024435212
+2026-10-04 19:20:43,010 | INFO     | aiogram.event | Update id=494901174 is handled. Duration 435 ms by bot id=7024435212
+2026-10-04 19:20:52,062 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 19:20:52,675 | INFO     | aiogram.event | Update id=494901175 is handled. Duration 1380 ms by bot id=7024435212
+2026-10-04 19:27:18,823 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 19:27:19,099 | INFO     | database | Database connection closed
+2026-10-04 19:27:19,101 | INFO     | qcine | Shutdown complete
+2026-10-04 19:27:19,103 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:27:26,556 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 19:27:27,473 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 19:27:28,234 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 19:27:29,691 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 19:27:29,939 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:27:36,027 | INFO     | aiogram.event | Update id=494901176 is not handled. Duration 1 ms by bot id=7024435212
+2026-10-04 19:27:48,591 | INFO     | aiogram.event | Update id=494901177 is handled. Duration 931 ms by bot id=7024435212
+2026-10-04 19:27:50,692 | INFO     | aiogram.event | Update id=494901178 is handled. Duration 477 ms by bot id=7024435212
+2026-10-04 19:27:51,968 | INFO     | aiogram.event | Update id=494901179 is handled. Duration 465 ms by bot id=7024435212
+2026-10-04 19:27:53,363 | INFO     | aiogram.event | Update id=494901180 is handled. Duration 432 ms by bot id=7024435212
+2026-10-04 19:27:58,157 | INFO     | aiogram.event | Update id=494901181 is handled. Duration 440 ms by bot id=7024435212
+2026-10-04 19:28:10,268 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 19:28:10,734 | INFO     | aiogram.event | Update id=494901182 is handled. Duration 1219 ms by bot id=7024435212
+2026-10-04 19:30:14,602 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-04 19:30:14,862 | INFO     | database | Database connection closed
+2026-10-04 19:30:14,863 | INFO     | qcine | Shutdown complete
+2026-10-04 19:30:14,865 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:30:20,988 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-04 19:30:21,961 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-04 19:30:22,799 | ERROR    | qcine | Cannot access STORAGE_CHAT_ID=4307697109 - is the bot an admin there?
+2026-10-04 19:30:24,343 | INFO     | aiogram.dispatcher | Start polling
+2026-10-04 19:30:24,599 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-04 19:30:29,483 | INFO     | aiogram.event | Update id=494901184 is handled. Duration 950 ms by bot id=7024435212
+2026-10-04 19:30:33,448 | INFO     | aiogram.event | Update id=494901185 is handled. Duration 457 ms by bot id=7024435212
+2026-10-04 19:30:35,738 | INFO     | aiogram.event | Update id=494901186 is handled. Duration 432 ms by bot id=7024435212
+2026-10-04 19:30:37,740 | INFO     | aiogram.event | Update id=494901187 is handled. Duration 602 ms by bot id=7024435212
+2026-10-04 19:30:40,935 | INFO     | aiogram.event | Update id=494901188 is handled. Duration 422 ms by bot id=7024435212
+2026-10-04 19:30:50,766 | ERROR    | handlers.admin | Failed to store file in storage channel
+Traceback (most recent call last):
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\handlers\admin.py", line 148, in add_file
+    stored = await storage_service.ingest(message, storage_caption(code, name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\practice\tgbot\qcine_bot1\qcine_bot\services\storage_service.py", line 77, in ingest
+    sent = await self._bot.send_video(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._chat, message.video.file_id, caption=caption, supports_streaming=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 3488, in send_video
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\bot.py", line 515, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\python313\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: chat not found
+2026-10-04 19:30:51,227 | INFO     | aiogram.event | Update id=494901189 is handled. Duration 1237 ms by bot id=7024435212
+2026-10-05 10:48:36,807 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-05 10:48:37,740 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-05 10:48:38,175 | INFO     | qcine | Storage chat OK: Qcine backup
+2026-10-05 10:48:38,508 | INFO     | database | Database connection closed
+2026-10-05 10:48:38,767 | INFO     | qcine | Shutdown complete
+2026-10-05 10:48:45,692 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-05 10:48:46,631 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-05 10:48:46,880 | INFO     | qcine | Storage chat OK: Qcine backup
+2026-10-05 10:48:48,374 | INFO     | aiogram.dispatcher | Start polling
+2026-10-05 10:48:48,615 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-05 10:48:58,468 | INFO     | aiogram.event | Update id=494901190 is handled. Duration 929 ms by bot id=7024435212
+2026-10-05 10:49:01,751 | INFO     | aiogram.event | Update id=494901191 is handled. Duration 440 ms by bot id=7024435212
+2026-10-05 10:49:08,561 | INFO     | aiogram.event | Update id=494901192 is handled. Duration 514 ms by bot id=7024435212
+2026-10-05 10:49:16,360 | INFO     | aiogram.event | Update id=494901193 is handled. Duration 440 ms by bot id=7024435212
+2026-10-05 10:49:40,699 | INFO     | aiogram.event | Update id=494901194 is handled. Duration 438 ms by bot id=7024435212
+2026-10-05 10:50:22,765 | INFO     | services.movie_service | Movie created: THE
+2026-10-05 10:50:23,217 | INFO     | aiogram.event | Update id=494901195 is handled. Duration 1118 ms by bot id=7024435212
+2026-10-05 10:56:48,154 | INFO     | aiogram.event | Update id=494901196 is handled. Duration 497 ms by bot id=7024435212
+2026-10-05 10:56:53,552 | INFO     | aiogram.event | Update id=494901197 is handled. Duration 510 ms by bot id=7024435212
+2026-10-05 10:56:59,569 | INFO     | services.movie_service | Movie deleted: THE
+2026-10-05 10:57:00,464 | INFO     | aiogram.event | Update id=494901198 is handled. Duration 902 ms by bot id=7024435212
+2026-10-05 10:57:34,843 | INFO     | aiogram.event | Update id=494901199 is handled. Duration 442 ms by bot id=7024435212
+2026-10-05 11:00:46,297 | INFO     | aiogram.event | Update id=494901200 is handled. Duration 431 ms by bot id=7024435212
+2026-10-05 11:00:53,642 | INFO     | handlers.user | Code not found: THE (user 1709162382)
+2026-10-05 11:00:54,098 | INFO     | aiogram.event | Update id=494901201 is handled. Duration 458 ms by bot id=7024435212
+2026-10-05 11:00:59,570 | INFO     | aiogram.event | Update id=494901202 is handled. Duration 437 ms by bot id=7024435212
+2026-10-05 11:01:03,921 | INFO     | aiogram.event | Update id=494901203 is handled. Duration 448 ms by bot id=7024435212
+2026-10-05 11:01:06,575 | INFO     | aiogram.event | Update id=494901204 is handled. Duration 433 ms by bot id=7024435212
+2026-10-05 11:01:12,673 | INFO     | aiogram.event | Update id=494901205 is handled. Duration 476 ms by bot id=7024435212
+2026-10-05 11:01:15,812 | INFO     | aiogram.event | Update id=494901206 is handled. Duration 450 ms by bot id=7024435212
+2026-10-05 11:01:26,649 | INFO     | aiogram.event | Update id=494901207 is handled. Duration 439 ms by bot id=7024435212
+2026-10-05 11:02:03,726 | INFO     | services.movie_service | Movie created: THE
+2026-10-05 11:02:04,171 | INFO     | aiogram.event | Update id=494901208 is handled. Duration 1092 ms by bot id=7024435212
+2026-10-05 11:02:39,145 | INFO     | aiogram.event | Update id=494901209 is handled. Duration 438 ms by bot id=7024435212
+2026-10-05 11:02:43,827 | INFO     | aiogram.event | Update id=494901210 is handled. Duration 849 ms by bot id=7024435212
+2026-10-05 11:02:47,928 | INFO     | aiogram.event | Update id=494901211 is handled. Duration 808 ms by bot id=7024435212
+2026-10-05 11:02:54,749 | INFO     | aiogram.event | Update id=494901212 is handled. Duration 449 ms by bot id=7024435212
+2026-10-05 11:02:59,574 | INFO     | aiogram.event | Update id=494901213 is handled. Duration 460 ms by bot id=7024435212
+2026-10-05 11:03:11,718 | INFO     | aiogram.event | Update id=494901214 is handled. Duration 437 ms by bot id=7024435212
+2026-10-05 11:03:17,424 | INFO     | aiogram.event | Update id=494901215 is handled. Duration 869 ms by bot id=7024435212
+2026-10-05 11:03:36,235 | INFO     | aiogram.event | Update id=494901216 is handled. Duration 885 ms by bot id=7024435212
+2026-10-05 11:04:20,646 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-05 11:04:20,920 | INFO     | database | Database connection closed
+2026-10-05 11:04:20,922 | INFO     | qcine | Shutdown complete
+2026-10-05 11:04:20,924 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-05 20:46:49,630 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-05 20:46:50,598 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-05 20:46:51,075 | INFO     | qcine | Storage chat OK: Qcine backup
+2026-10-05 20:46:52,220 | INFO     | aiogram.dispatcher | Start polling
+2026-10-05 20:46:52,465 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-05 20:48:33,919 | INFO     | aiogram.event | Update id=494901219 is handled. Duration 962 ms by bot id=7024435212
+2026-10-05 20:48:49,416 | INFO     | aiogram.event | Update id=494901220 is handled. Duration 522 ms by bot id=7024435212
+2026-10-05 20:48:54,581 | INFO     | aiogram.event | Update id=494901221 is handled. Duration 905 ms by bot id=7024435212
+2026-10-05 20:49:01,684 | INFO     | aiogram.event | Update id=494901222 is handled. Duration 1058 ms by bot id=7024435212
+2026-10-05 20:49:48,898 | INFO     | aiogram.event | Update id=494901223 is handled. Duration 458 ms by bot id=7024435212
+2026-10-05 20:49:57,394 | INFO     | aiogram.event | Update id=494901224 is handled. Duration 452 ms by bot id=7024435212
+2026-10-05 20:50:04,988 | INFO     | aiogram.event | Update id=494901225 is handled. Duration 465 ms by bot id=7024435212
+2026-10-05 20:50:10,740 | INFO     | aiogram.event | Update id=494901226 is handled. Duration 469 ms by bot id=7024435212
+2026-10-05 20:50:15,730 | INFO     | aiogram.event | Update id=494901227 is handled. Duration 443 ms by bot id=7024435212
+2026-10-05 20:50:39,474 | INFO     | services.movie_service | Movie created: RFY
+2026-10-05 20:50:39,911 | INFO     | aiogram.event | Update id=494901228 is handled. Duration 974 ms by bot id=7024435212
+2026-10-05 20:50:58,239 | INFO     | aiogram.event | Update id=494901229 is handled. Duration 451 ms by bot id=7024435212
+2026-10-05 20:51:02,630 | INFO     | aiogram.event | Update id=494901230 is handled. Duration 879 ms by bot id=7024435212
+2026-10-05 20:51:37,788 | INFO     | aiogram.event | Update id=494901231 is handled. Duration 450 ms by bot id=7024435212
+2026-10-05 20:53:09,192 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-05 20:53:09,465 | INFO     | database | Database connection closed
+2026-10-05 20:53:09,466 | INFO     | qcine | Shutdown complete
+2026-10-05 20:53:09,468 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-05 20:53:32,081 | INFO     | database | Database ready at E:\practice\tgbot\qcine_bot1\qcine_bot\data\qcine.db
+2026-10-05 20:53:33,039 | INFO     | qcine | Starting @Lawransur_bot
+2026-10-05 20:53:33,516 | INFO     | qcine | Storage chat OK: Qcine backup
+2026-10-05 20:53:34,572 | INFO     | aiogram.dispatcher | Start polling
+2026-10-05 20:53:34,807 | INFO     | aiogram.dispatcher | Run polling for bot @Lawransur_bot id=7024435212 - 'Lawransur'
+2026-10-05 20:53:39,977 | INFO     | aiogram.event | Update id=494901233 is handled. Duration 942 ms by bot id=7024435212
+2026-10-05 20:54:13,501 | INFO     | aiogram.dispatcher | Polling stopped
+2026-10-05 20:54:13,777 | INFO     | database | Database connection closed
+2026-10-05 20:54:13,778 | INFO     | qcine | Shutdown complete
+2026-10-05 20:54:13,779 | INFO     | aiogram.dispatcher | Polling stopped for bot @Lawransur_bot id=7024435212 - 'Lawransur'
